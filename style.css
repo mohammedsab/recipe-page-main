@@ -1,0 +1,145 @@
+:root {
+  --color-nutmeg: hsl(14, 45%, 36%);
+  --color-dark-raspberry: hsl(332, 51%, 32%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-rose-white: hsl(330, 100%, 98%);
+  --color-eggshell: hsl(30, 54%, 90%);
+  --color-light-grey: hsl(30, 18%, 87%);
+  --color-wenge-brown: hsl(30, 10%, 34%);
+  --color-dark-charcoal: hsl(24, 5%, 18%);
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: "Young serif";
+  src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+body {
+  background-color: var(--color-eggshell);
+  font-size: 16px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin: 120px auto;
+  max-width: 737px;
+  background-color: var(--color-white);
+  border-radius: 20px;
+  padding: 40px;
+}
+
+img {
+  border-radius: 20px;
+}
+
+h1,
+h2 {
+  font-family: "Young serif", serif;
+}
+
+h1 {
+  color: var(--color-dark-charcoal);
+  margin: 40px 0 28px 0;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+h2 {
+  color: var(--color-nutmeg);
+  font-size: 1.75rem;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.preptime {
+  background-color: var(--color-rose-white);
+  padding: 30px;
+  margin: 35px 0;
+  border-radius: 10px;
+}
+
+.preptime h2 {
+  font-weight: 600;
+}
+
+#preptime-title {
+  color: var(--color-dark-raspberry);
+  font-family: "Outfit", sans-serif;
+  margin-bottom: 20px;
+}
+
+ul,
+ol {
+  padding-left: 25px;
+  color: var(--color-dark-charcoal);
+}
+
+li::marker {
+  color: var(--color-dark-raspberry);
+}
+
+li {
+  padding: 0 0 15px 20px;
+  color: var(--color-nutmeg);
+}
+
+li:last-child {
+  padding-bottom: 0;
+}
+
+ul li {
+  list-style-type: square;
+}
+
+hr {
+  border-color: var(--color-light-grey);
+  margin: 33px 0;
+}
+
+.steps-component li {
+  color: var(--color-wenge-brown);
+}
+
+ol li::marker {
+  font-weight: 500;
+}
+
+table {
+  margin-top: 20px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.name {
+  padding-left: 40px;
+}
+
+.value {
+  font-weight: 600;
+  color: var(--color-nutmeg);
+  padding-right: 30px;
+}
+
+tr {
+  border-bottom: 1px solid var(--color-light-grey);
+}
+
+td {
+  height: 38px;
+}
